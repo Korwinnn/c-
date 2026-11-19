@@ -1,0 +1,51 @@
+moge cie prosic o cos takiego , chce rozwiazac to trudne zadanie w c++
+Czy moglbys sam je dokladnie przeanalizowac i pomoc mi z nim
+zaczynajac od tego ze ja chcialbym je zrozumiec
+tylko tresc jest za dluga nawet nie chce mi sie tego czytac
+prosze pomoz mi z rozwiazaniem
+mozemy zaczac od dokladnego wyjasnienia o co chodzi w tym zadaniu - co ma robic , wytlumaczenie z jakims przykladem i potem na podstawie tego jaki algorytm wybrrac czy moze rozwiazanie jest banalnie proste np ograniczyc cos czy cos
+wiem tez ze musze sam robic testy tzn nie mam sprawdzarki ile punktow zdobede za moj kod ale mamy przeciez podzadania i mozna to jakos wykorzystac czy np moj kod przechodzi dane podzadanie tylko ja nie wiem ja k to robic , korzystam z code blocks
+i ktos kiedys mi mowil ze czas - moge se srpawdzac wzorem np
+#include <bits/stdc++.h>
+#define LOCAL // przed wys�aniem do SIO zakomentuj t� lini�
+#ifdef LOCAL
+#ifdef _WIN32
+#define NOMINMAX
+#include <windows.h>
+#include <psapi.h>
+#endif
+#endif
+using namespace std;
+#ifdef LOCAL
+struct Pomiar {
+chrono::steady_clock::time_point start = chrono::steady_clock::now();
+~Pomiar() {
+cerr << "\n--- czas: "
+<< chrono::duration<double>(chrono::steady_clock::now() - start).count()
+<< " s";
+#ifdef _WIN32
+PROCESS_MEMORY_COUNTERS pmc;
+GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc));
+cerr << ", pamiec: " << pmc.PeakWorkingSetSize / 1048576.0 << " MB";
+#endif
+cerr << " ---\n";
+}
+} pomiar;
+#endif
+// ===== TU PISZESZ SWOJE FUNKCJE =====
+int main() {
+#ifdef LOCAL
+if (!freopen("test.in", "r", stdin)) {
+cerr << "nie znaleziono test.in\n";
+return 1;
+}
+#endif
+// ===== TU PISZESZ ROZWIAZANIE =====  
+int n;  
+string A, B;  
+cin >> n >> A >> B;
+cout << "tu wynik\n";  
+}
+
+
+chce abys przetestowal  wszystko itd a na koncu zwrocil mi rozwiazanie z cintie cinami bez tych narzedzi pomiarowych
